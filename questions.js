@@ -1,3 +1,4 @@
+import {translateQuestions} from './english-questions.js';
 const groups={
 lecture1:[
 ['حساب متوسط درجات العينة نفسها يُعد…',['Descriptive Statistics','Inferential Statistics','Data Fusion','Cluster Sampling'],0,'بنلخّص البيانات الموجودة من غير تعميم على مجتمع أكبر.','10–15'],
@@ -92,3 +93,4 @@ export const written=[
 {topic:'lab2',q:'فسّر Correlation العالي بين Credit_Limit وAvg_Open_To_Buy.',a:'r≈0.99598 في البيانات. Avg_Open_To_Buy مرتبط حسابيًا بـCredit_Limit ناقص Total_Revolving_Bal؛ العلاقة العالية قد تعكس تعريفًا مشتقًا. نراجع Redundancy، ولا نستنتج سببية من r.'},
 {topic:'lab2',q:'إزاي تضمن Stratified sample بحجم 500 بالضبط؟',a:'احسب الحصة الدقيقة Nₕ/N×500، خذ Floor لكل حصة، ثم وزّع العدد المتبقي على الطبقات ذات أكبر أجزاء عشرية. في الفترات المعروضة الناتج [36,145,205,98,16] مجموعها 500.'}
 ];
+translateQuestions(questions,written);

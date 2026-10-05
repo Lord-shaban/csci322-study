@@ -1,6 +1,6 @@
 # CSCI322 — افهم البيانات
 
-Arabic visual study guide for Lecture 1, Lecture 2 and Labs 01–02. English technical terminology is preserved.
+English visual study guide for Lecture 1, Lecture 2 and Labs 01–02. Every teaching section includes separate Arabic notes underneath. All questions, options, model answers and primary explanations are in English; answer reviews also include Arabic support notes.
 
 Includes 21 teaching sections, interactive sampling, imputation, Pearson and chi-square demonstrations, a real-data age distribution comparison, 70 MCQs and 10 written questions with explanations and source locations. The question bank is original study material, not an official exam.
 

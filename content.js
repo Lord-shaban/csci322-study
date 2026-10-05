@@ -1,3 +1,4 @@
+import {translateLessons} from './english-lessons.js';
 export const code = (s) => `<div class="code"><div class="code-top"><span>Python · Pandas</span><button class="copy">نسخ الكود</button></div><pre dir="ltr"><code>${s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')}</code></pre></div>`;
 const note = (s) => `<aside class="note"><strong>خد بالك</strong><p>${s}</p></aside>`;
 const table = (h,r) => `<div class="table-wrap"><table><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${r.map(row=>`<tr>${row.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
@@ -41,3 +42,6 @@ export const refs=[
 {title:'Pandas — Indexing & Sampling',detail:'توثيق رسمي للتحقق من سلوك loc / iloc وsample. مرجع تكميلي للكود المصحّح.',url:'https://pandas.pydata.org/docs/user_guide/indexing.html',kind:'توثيق رسمي'},
 {title:'SciPy — chi2_contingency & pearsonr',detail:'توثيق رسمي للتطبيق العملي للاختبارات الإحصائية وشروط استخدامها.',url:'https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html',kind:'توثيق رسمي'}
 ];
+
+translateLessons(courses, refs);
+

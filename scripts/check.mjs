@@ -3,7 +3,9 @@ import {courses} from '../content.js';
 import {questions,written} from '../questions.js';
 import {pearson,chiSquare,allocate} from '../math.js';
 assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
-for(const q of questions){assert.ok(courses.some(c=>c.id===q.topic));assert.equal(q.options.length,4);assert.ok(q.answer>=0&&q.answer<4);assert.ok(q.explanation&&q.source);}
+for(const q of questions){assert.ok(courses.some(c=>c.id===q.topic));assert.equal(q.options.length,4);assert.ok(q.answer>=0&&q.answer<4);assert.ok(q.explanation&&q.source);assert.ok(!/[\u0600-\u06ff]/.test([q.text,...q.options,q.explanation].join(' ')),`Question must be English: ${q.id}`);assert.ok(/[\u0600-\u06ff]/.test(q.arabicExplanation),`Arabic note missing: ${q.id}`);}
+for(const c of courses){for(const section of c.sections){assert.ok(section.html.includes('class="arabic-note"'));const primary=section.html.replace(/<aside class="arabic-note"[\s\S]*?<\/aside>/g,'');assert.ok(!/[\u0600-\u06ff]/.test(primary),`Primary explanation must be English: ${c.id}/${section.id}`);}}
+for(const w of written){assert.ok(!/[\u0600-\u06ff]/.test(w.q+w.a));assert.ok(w.arabicExplanation);}
 assert.equal(pearson([1,2,3],[2,4,6]),1);
 assert.equal(pearson([1,2,3],[6,4,2]),-1);
 assert.equal(pearson([1,1,1],[2,3,4]),null);
