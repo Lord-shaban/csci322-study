@@ -1,0 +1,5 @@
+{
+  "name": "csci322-study", "version": "1.0.0", "private": true,
+  "type": "module", "scripts": {"dev": "node scripts/serve.mjs", "check": "node scripts/check.mjs"},
+  "description": "Arabic visual study guide for CSCI322 lectures and labs"
+}

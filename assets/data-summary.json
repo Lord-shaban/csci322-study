@@ -1,0 +1,1 @@
+{"counts": [735, 2940, 4148, 1992, 312], "random": [31, 142, 215, 91, 21], "allocation": [36, 145, 205, 98, 16], "labels": ["26–34", "35–43", "44–52", "53–61", "62–73"], "source": "customers.csv; pd.cut right=False; sample random_state=42", "rows": 10127, "columns": 21, "pearson": 0.9959805439320051, "maxIdentityDifference": 5.684341886080802e-14}
