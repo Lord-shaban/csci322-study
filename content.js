@@ -36,8 +36,8 @@ export const refs=[
 {title:'Lecture 1 — Data Types, Collection & Sampling',detail:'الملف المرفق · 41 صفحة · مصدر الشرح الأساسي للمحاضرة الأولى',kind:'محاضرة'},
 {title:'Lecture 2 — Data Preprocessing I',detail:'الملف المرفق · 38 صفحة · مصدر الشرح الأساسي للمحاضرة الثانية',kind:'محاضرة'},
 {title:'Data Analysis — Session 01 & Session 02',detail:'النوتبوكان المرفقان وملفا heart.csv وcustomers.csv · الأمثلة والنتائج العملية',kind:'لابات'},
-{title:'Data Mining: Concepts and Techniques',detail:'Jiawei Han, Micheline Kamber & Jian Pei · المرجع المذكور في Lecture 1، ص. 7. لم تُرفق نسخة الكتاب؛ لا تُنسب أسئلة لصفحات غير متاحة منه.',url:'https://www.sciencedirect.com/book/9780123814791/data-mining-concepts-and-techniques',kind:'مرجع المقرر'},
-{title:'Statistical Analysis Handbook',detail:'Michael John de Smith · المرجع المذكور في Lecture 1، ص. 7. لم يُرفق نص الكتاب؛ الشرح مبني على الشرائح المتاحة.',url:'https://www.statsref.com/',kind:'مرجع المقرر'},
+{title:'Data Mining: Concepts and Techniques — Chapter 3',detail:'Jiawei Han, Micheline Kamber & Jian Pei · فصل Data Preprocessing المنشور على موقع المؤلف. استُخدم §3.1.1 لإضافة أسئلة عن Quality وDisguised missing data؛ ترقيم الإحالات هو صفحات PDF.',url:'https://hanj.cs.illinois.edu/cs412/bk3/03.pdf',kind:'مرجع المقرر · فصل متاح'},
+{title:'Statistical Analysis Handbook — Official Preview',detail:'Michael John de Smith · النسخة التجريبية الرسمية، 2018–2024. استُخدم §1.3 (PDF p. 36) و§2.3 (PDF p. 66) لأسئلة عن الرتب واعتماد المشاهدات.',url:'https://www.statsref.com/StatsRefSample.pdf',kind:'مرجع المقرر · نسخة تجريبية'},
 {title:'Pandas — Indexing & Sampling',detail:'توثيق رسمي للتحقق من سلوك loc / iloc وsample. مرجع تكميلي للكود المصحّح.',url:'https://pandas.pydata.org/docs/user_guide/indexing.html',kind:'توثيق رسمي'},
 {title:'SciPy — chi2_contingency & pearsonr',detail:'توثيق رسمي للتطبيق العملي للاختبارات الإحصائية وشروط استخدامها.',url:'https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html',kind:'توثيق رسمي'}
 ];
